@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Navlink } from '../navlink';
 
 @Component({
   selector: 'app-navbar-button',
   templateUrl: './navbar-button.component.html',
-  styleUrls: ['./navbar-button.component.css']
 })
 export class NavbarButtonComponent implements OnInit {
 
-  constructor() { }
+  @Input() link: Navlink;
+
+  constructor() {}
 
   ngOnInit() {
+
+  }
+
+  onLinkClicked(): void {
+    console.log("coucou");
   }
 
 }

@@ -24,30 +24,36 @@
   flex: 1;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: flex;
 }
 
 .navbar-element {
   flex: 1;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 
 .navbar-element:hover {
   background-color: var(--primary-hover, #174db7);
+  cursor: pointer;
 }
 
 .navbar-link {
     margin: auto;
-    color: white;
+}
 
+.navbar-link a {
+  text-decoration: none;
+  color: white;
 }
 
 .navbar-title {
+  margin: auto;
     color: white;
 }
 
 .navbar-element-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
-
+  align-items: stretch;
 }

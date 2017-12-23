@@ -6,16 +6,8 @@
 
   <span class="spacer-1"></span>
 
-  <span class="navbar-element">
-    <app-navbar-button></app-navbar-button>
-  </span>
-
-  <span class="navbar-element">
-    <app-navbar-button></app-navbar-button>
-  </span>
-
-  <span class="navbar-element">
-    <app-navbar-button></app-navbar-button>
+  <span *ngFor="let link of navlinks" class="navbar-element">
+    <app-navbar-button [link]="link"></app-navbar-button>
   </span>
 
   <span class="spacer-2"></span>
