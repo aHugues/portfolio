@@ -1,47 +1,42 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
 # compiled output
-frontend/tmp
-frontend/out-tsc
+/dist
+/tmp
+/out-tsc
 
 # dependencies
-node_modules
+/node_modules
 
 # IDEs and editors
-graphs tool/graphs/idea
-graphs tool/graphs/project
-graphs tool/graphs/classpath
-graphs tool/graphs/c9/
+/.idea
+.project
+.classpath
+.c9/
 *.launch
-graphs tool/graphs/settings/
+.settings/
 *.sublime-workspace
 
 # IDE - VSCode
-graphs tool/graphs/vscode/*
-!graphs tool/graphs/vscode/settings.json
-!graphs tool/graphs/vscode/tasks.json
-!graphs tool/graphs/vscode/launch.json
-!graphs tool/graphs/vscode/extensions.json
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # misc
-graphs tool/graphs/.sass-cache
-graphs tool/graphs/connect.lock
-graphs tool/graphs/coverage
-graphs tool/graphs/libpeerconnection.log
-graphs tool/graphs/npm-debug.log
-graphs tool/graphs/testem.log
-graphs tool/graphs/typings
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
 
 # e2e
-graphs tool/graphs/e2e/*.js
-graphs tool/graphs/e2e/*.map
-
-#debug file
-graphs tool/back/npm-debug.log
+/e2e/*.js
+/e2e/*.map
 
 # System Files
 .DS_Store
 Thumbs.db
-
-# Pythons Files
-*/__pycache__/*
-**/__pycache__/*
-*.pyc
