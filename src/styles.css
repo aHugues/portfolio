@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./styles/navbar.css";
+
+/* remove all margin to fill full page */
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}

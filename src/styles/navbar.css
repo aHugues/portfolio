@@ -1,0 +1,10 @@
+/* import color palette for the styles */
+@import "./colors.css";
+
+/* container for the whole top navbar */
+.navbar-container {
+    background-color: var(--primary, #436AB9);
+    width: 100;
+    margin-left: 0;
+    margin-right: 0;
+}
