@@ -17,7 +17,7 @@ export class NavbarButtonComponent implements OnInit {
   }
 
   onLinkClicked(): void {
-    console.log("coucou");
+    window.location.href = this.link.linkValue;
   }
 
 }
