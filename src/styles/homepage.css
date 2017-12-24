@@ -1,0 +1,33 @@
+.homepage {
+  display: flex;
+}
+
+.main-card {
+  background-color: white;
+  border-radius: 5px;
+  width: 40%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile-image {
+  width: 50%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #888;
+}
+
+.profile-image img {
+    width: 150%;
+    height: 200%;
+    margin-left: -22%;
+    margin-bottom: -5%;
+}

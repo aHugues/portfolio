@@ -1,10 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "./styles/navbar.css";
+@import "./styles/homepage.css";
+@import "./styles/colors.css";
 
 /* remove all margin to fill full page */
 html {
   margin: 0;
+  background-color: var(--background, white);
 }
 
 body {
