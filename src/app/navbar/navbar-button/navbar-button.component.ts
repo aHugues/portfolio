@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Navlink } from '../navlink';
 
@@ -10,14 +11,16 @@ export class NavbarButtonComponent implements OnInit {
 
   @Input() link: Navlink;
 
-  constructor() {}
+  constructor(
+    private router: Router,
+  ) {}
 
   ngOnInit() {
 
   }
 
   onLinkClicked(): void {
-    window.location.href = this.link.linkValue;
+    this.router.navigate([this.link.linkValue]);
   }
 
 }
