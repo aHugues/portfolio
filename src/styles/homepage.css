@@ -19,8 +19,8 @@
   width: 50%;
   overflow: hidden;
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   border-radius: 100%;
   border-style: solid;
   border-width: 2px;
@@ -36,4 +36,30 @@
 
 .name h2 {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.title h3 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.cv a {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.linkedin {
+  margin-top: 60px;
+}
+
+.github {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.linkedin img {
+  width: 10%;
+}
+
+.github img {
+  width: 10%;
 }
