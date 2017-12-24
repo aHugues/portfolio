@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { SamplesComponent } from './samples.component';
+import { SamplesComponent } from './samples-list/samples.component';
 
 const routes: Routes = [
   { path: 'samples', component: SamplesComponent}
