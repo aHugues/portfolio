@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Sample } from '../sample';
+import { samplesList } from './samples';
 
 @Component({
   selector: 'app-samples',
@@ -8,17 +9,12 @@ import { Sample } from '../sample';
 })
 export class SamplesComponent implements OnInit {
 
-  sample: Sample;
+  samples: Sample[];
 
   constructor() { }
 
   ngOnInit() {
-
-    this.sample = new Sample();
-    this.sample.title = "Porygon";
-    this.sample.description = "Porygon application";
-    
-
+    this.samples = samplesList;
   }
 
 }
