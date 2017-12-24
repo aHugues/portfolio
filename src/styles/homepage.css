@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:Light');
 
 .homepage {
   display: flex;
@@ -35,16 +34,14 @@
 }
 
 .name h2 {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+
 }
 
 .title h3 {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
   margin-bottom: 50px;
 }
 
 .cv a {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
   text-decoration: none;
 }
 

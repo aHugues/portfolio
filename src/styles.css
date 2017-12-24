@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:Light');
+
 @import "./styles/navbar.css";
 @import "./styles/homepage.css";
 @import "./styles/colors.css";
@@ -11,6 +13,7 @@ html {
   background-color: var(--background, white);
   background-image: url("/assets/background.jpeg");
   background-repeat: no-repeat;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   /* Photo by 祝 鹤槐 from Pexels https://www.pexels.com/photo/abstract-art-blur-bokeh-544917/ */
 }
 
