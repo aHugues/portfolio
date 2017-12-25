@@ -23,8 +23,13 @@ export class NavbarComponent implements OnInit {
     porygonLink.viewValue = "Application samples";
     porygonLink.linkValue = "samples";
 
+    let contactLink = new Navlink();
+    contactLink.viewValue = "Contact";
+    contactLink.linkValue = "contact";
+
     this.navlinks.push(homeLink);
     this.navlinks.push(porygonLink);
+    this.navlinks.push(contactLink);
   }
 
 }
