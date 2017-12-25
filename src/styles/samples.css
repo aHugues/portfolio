@@ -26,3 +26,11 @@
 
 .sample-container .description {
 }
+
+.sample-container .illustration-container {
+  text-align: center;
+}
+
+.sample-container .illustration-container img {
+  width: 80%;
+}

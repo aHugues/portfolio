@@ -43,12 +43,12 @@
     margin: auto;
 }
 
-.navbar-link a {
+.navbar-link-active a {
   text-decoration: none;
   color: white;
 }
 
-.navbar-link-active a {
+.navbar-link a {
   text-decoration: none;
   color: var(--active, blue);
 }
