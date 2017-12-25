@@ -6,6 +6,7 @@
 @import "./styles/homepage.css";
 @import "./styles/colors.css";
 @import "./styles/samples.css";
+@import "./styles/contact.css";
 
 /* remove all margin to fill full page */
 html {
