@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
 
     let homeLink = new Navlink();
     homeLink.viewValue = "Home";
-    homeLink.linkValue = "/";
+    homeLink.linkValue = "home";
 
     let porygonLink = new Navlink();
     porygonLink.viewValue = "Application samples";

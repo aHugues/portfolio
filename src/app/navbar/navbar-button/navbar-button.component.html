@@ -1,5 +1,9 @@
 <span (click)="onLinkClicked()" class="navbar-element-content">
-  <span class="navbar-link">
+  <span *ngIf="isActive()" class="navbar-link-active">
+    <a> {{ link.viewValue }} </a>
+  </span>
+
+  <span *ngIf="!isActive()" class="navbar-link">
     <a> {{ link.viewValue }} </a>
   </span>
 </span>

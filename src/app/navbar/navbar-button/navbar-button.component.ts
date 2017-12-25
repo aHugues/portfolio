@@ -16,11 +16,15 @@ export class NavbarButtonComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-
+    this.isActive();
   }
 
   onLinkClicked(): void {
     this.router.navigate([this.link.linkValue]);
+  }
+
+  isActive(): Boolean {
+    return this.router.url.substring(1) == this.link.linkValue;
   }
 
 }
