@@ -14,4 +14,8 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
+  alertNotImplemented(): void {
+    alert('The contact form is not yet implemented.');
+  }
+
 }
