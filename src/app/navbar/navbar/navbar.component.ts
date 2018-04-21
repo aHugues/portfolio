@@ -8,7 +8,7 @@ import { Navlink } from '../navlink';
 })
 export class NavbarComponent implements OnInit {
 
-  private navlinks: Navlink[];
+  public navlinks: Navlink[];
   private expanded: Boolean = false;
 
   constructor() { }
@@ -16,17 +16,17 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.navlinks = [];
 
-    let homeLink = new Navlink();
-    homeLink.viewValue = "Home";
-    homeLink.linkValue = "home";
+    const homeLink = new Navlink();
+    homeLink.viewValue = 'Home';
+    homeLink.linkValue = 'home';
 
-    let porygonLink = new Navlink();
-    porygonLink.viewValue = "Application samples";
-    porygonLink.linkValue = "samples";
+    const porygonLink = new Navlink();
+    porygonLink.viewValue = 'Application samples';
+    porygonLink.linkValue = 'samples';
 
-    let contactLink = new Navlink();
-    contactLink.viewValue = "Contact";
-    contactLink.linkValue = "contact";
+    const contactLink = new Navlink();
+    contactLink.viewValue = 'Contact';
+    contactLink.linkValue = 'contact';
 
     this.navlinks.push(homeLink);
     this.navlinks.push(porygonLink);
