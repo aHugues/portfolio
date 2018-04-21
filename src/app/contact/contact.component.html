@@ -7,18 +7,19 @@
     </span>
 
     <form>
+      <div class="form-container">
 
-      <div class="form-group">
+
         <label for="returnEmail">Email</label>
-        <input type="text" class="form-control" id="returnEmail" required>
-      </div>
+        <input type="text" class="email-input form-control" id="returnEmail" required placeholder="Your email">
 
-      <div class="form-group">
         <label for="content">Message content</label>
-        <input type="text" class="form-control" id="content" required>
-      </div>
+        <textarea class="form-control" id="content" required placeholder="Your message"></textarea>
 
-      <button type="submit" class="btn btn-success">Send message</button>
+
+        <button type="submit" class="btn btn-success send-button">Send message</button>
+
+      </div>
 
     </form>
 

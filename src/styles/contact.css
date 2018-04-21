@@ -5,11 +5,70 @@
 
 .contact-card {
   margin: auto;
-  margin-top: 100px;
+  margin-top: 30px;
   border-radius: 5px;
-  width: 60%;
-  background-color: white;
+  width: 70%;
+  background-color: ghostwhite;
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 20px;
+}
+
+.form-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+
+label {
+  text-align: left;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 10px 40px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+}
+
+.send-button {
+  grid-column: 2;
+  background-color: #4CAF50;
+  border: none;
+  padding: 16px 32px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.email-input {
+  background-image: url('/assets/icon-at.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+textarea {
+  height: 200px;
+  resize: vertical;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .send-button {
+    grid-column: 1;
+  }
+  
+  .form-container {
+    grid-template-columns: 100%;
+  }
 }
