@@ -1,23 +1,30 @@
 .samplespage {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
 }
 
 .sample-wrapper {
-  flex: 1;
-  width: 40%;
-  margin: 20px 10px 20px 10px;
-  min-width: 300px;
+  height: 100%;
+}
+
+.title {
+  margin: 0;
 }
 
 .sample-container {
   border-radius: 5px;
   background-color: white;
-  padding: 10px 10px 10px 10px;
   height: 100%;
+}
+
+.sample-content {
+  padding: 10px 10px 10px 10px;
+}
+
+.samplespage-wrapper {
+  margin: 10px 10px 10px 10px;
 }
 
 .sample-container .title {
@@ -33,4 +40,10 @@
 
 .sample-container .illustration-container img {
   width: 80%;
+}
+
+@media only screen and (max-width: 500px) {
+  .samplespage {
+    grid-template-columns: 100%;
+  }
 }

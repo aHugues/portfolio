@@ -1,8 +1,10 @@
-<div class="samplespage">
+<div class="samplespage-wrapper">
+  <div class="samplespage">
 
-  <div class="sample-wrapper" *ngFor="let sample of samples">
-    <app-sample [sample]="sample"></app-sample>
+    <div class="sample-wrapper" *ngFor="let sample of samples">
+      <app-sample [sample]="sample"></app-sample>
+    </div>
+
+
   </div>
-
-
 </div>
