@@ -3,34 +3,25 @@
 
 /* container for the whole top navbar */
 .navbar-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 200px auto 100px 150px 100px auto;
     vertical-align: center;
     /* background-color: var(--primary, #436AB9); */
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-}
-
-.spacer-1 {
-  flex: 1;
-}
-
-.spacer-2 {
-  flex: 2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
 }
 
 .navbar-element-static {
-  flex: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
 }
 
 .navbar-element {
-  flex: 1;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 
@@ -59,9 +50,73 @@
     color: white;
 }
 
-.navbar-element-content {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.vertical-navbar-element > app-navbar-button > .navbar-element-content {
+  display: block;
+  width: 200px;
+}
+
+.navbar-element > app-navbar-button > .navbar-element-content {
   display: flex;
   align-items: stretch;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.vertical-navbar-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-row-gap: 10px;
+  top: 60px;
+  position: fixed;
+  z-index: 99;
+  background-color: #2B2B2B;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+.expanded {
+  max-height: 100px;
+}
+
+.vertical-navbar-element {
+  display: flex;
+  padding-left: 20px;
+  width: 200px;
+}
+
+.vertical-navbar-element:hover {
+  background-color: var(--primary-hover, #174db7);
+  cursor: pointer;
+}
+
+.open-menu {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.menu-toggler {
+  color: #eaeaeaea;
+}
+
+.menu-toggler:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-element {
+    display: none;
+  }
+
+  .open-menu {
+    display: flex;
+  }
+
+  .navbar-container {
+    grid-template-columns: 200px auto auto 100px;
+  }
 }

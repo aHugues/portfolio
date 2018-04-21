@@ -9,6 +9,7 @@ import { Navlink } from '../navlink';
 export class NavbarComponent implements OnInit {
 
   private navlinks: Navlink[];
+  private expanded: Boolean = false;
 
   constructor() { }
 
@@ -30,6 +31,15 @@ export class NavbarComponent implements OnInit {
     this.navlinks.push(homeLink);
     this.navlinks.push(porygonLink);
     this.navlinks.push(contactLink);
+  }
+
+  toggleVerticalNavbar(): void {
+    if (this.expanded) {
+      document.getElementById('verticalNavbar').classList.remove('expanded');
+    } else {
+      document.getElementById('verticalNavbar').classList.add('expanded');
+    }
+    this.expanded = !this.expanded;
   }
 
 }
