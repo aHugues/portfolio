@@ -64,7 +64,7 @@
 }
 
 .vertical-navbar-container {
-  display: grid;
+  display: none;
   width: 100%;
   grid-template-columns: 100%;
   grid-row-gap: 10px;
@@ -118,5 +118,9 @@
 
   .navbar-container {
     grid-template-columns: 200px auto auto 100px;
+  }
+
+  .vertical-navbar-container {
+    display: grid;
   }
 }
