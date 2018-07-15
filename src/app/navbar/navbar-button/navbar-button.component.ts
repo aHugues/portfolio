@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Navlink } from '../navlink';
@@ -10,6 +10,7 @@ import { Navlink } from '../navlink';
 export class NavbarButtonComponent implements OnInit {
 
   @Input() link: Navlink;
+  @Output() clicked = new EventEmitter<any>();
 
   constructor(
     private router: Router,
@@ -21,10 +22,11 @@ export class NavbarButtonComponent implements OnInit {
 
   onLinkClicked(): void {
     this.router.navigate([this.link.linkValue]);
+    this.clicked.emit();
   }
 
   isActive(): Boolean {
-    return this.router.url.substring(1) == this.link.linkValue;
+    return this.router.url.substring(1) === this.link.linkValue;
   }
 
 }

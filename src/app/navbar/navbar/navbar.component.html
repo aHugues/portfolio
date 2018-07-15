@@ -25,7 +25,7 @@
   <span></span>
 
   <span *ngFor="let link of navlinks" class="vertical-navbar-element">
-    <app-navbar-button [link]="link"></app-navbar-button>
+    <app-navbar-button [link]="link" (clicked)="toggleVerticalNavbar()"></app-navbar-button>
   </span>
 
   <span></span>
