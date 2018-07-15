@@ -27,15 +27,11 @@
   border-color: #888;
 }
 
-.profile-image img {
+.profile-image > img {
     width: 150%;
-    height: 200%;
+    /* height: 200%; */
     margin-left: -22%;
     margin-bottom: -5%;
-}
-
-.name h2 {
-
 }
 
 .title h3 {
