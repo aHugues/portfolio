@@ -4,7 +4,7 @@
 /* container for the whole top navbar */
 .navbar-container {
     display: grid;
-    grid-template-columns: 200px auto 100px 150px 100px auto;
+    grid-template-columns: 200px 50px 100px 150px 100px auto;
     vertical-align: center;
     /* background-color: var(--primary, #436AB9); */
     width: 100%;
@@ -117,7 +117,7 @@
   }
 
   .navbar-container {
-    grid-template-columns: 200px auto auto 100px;
+    grid-template-columns: 200px auto 50px 10px;
   }
 
   .vertical-navbar-container {
